@@ -37,7 +37,7 @@
     <style type="text/css">
 
 #fig {
-  padding:10px;
+  padding:1px;
   font-size:1.4em;
   margin-left: 40px;
 }
@@ -345,7 +345,7 @@ jobs.forEach(function(d) d.percent = 100 * d.people / sumByYear[d.year]);
 
 /* Sizing parameters and scales. */
 var w = window.innerWidth*0.95,
-    h = window.innerHeight*0.5,
+    h = window.innerHeight*0.45,
 
     x = pv.Scale.linear(2002, 2015).range(0, w),
     y = pv.Scale.linear(0, 100).range(0, h),
