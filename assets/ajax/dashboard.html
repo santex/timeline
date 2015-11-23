@@ -21,6 +21,9 @@
     <!-- SmartAdmin RTL Support is under construction-->
     <link rel="stylesheet" type="text/css" media="screen" href="../css/smartadmin-rtl.min.css">
 
+    <script type="text/javascript" src="../js/protovis-r3.2.js"async ></script>
+    <script type="text/javascript" src="../data/jobs.js"async ></script>
+
     <!-- We recommend you use "your_style.css" to override SmartAdmin
          specific styles this will also ensure you retrain your customization with each SmartAdmin update.
     <link rel="stylesheet" type="text/css" media="screen" href="css/your_style.css"> -->
@@ -29,6 +32,49 @@
 
 <body style="overflow:hidden;height:100%;overflow-y:scroll;">
 <section id="widget-grid">
+
+
+    <style type="text/css">
+
+#fig {
+  padding:10px;
+  font-size:1.4em;
+  margin-left: 40px;
+}
+
+#footer {
+
+  padding-left: 40px;
+  color: #666;
+}
+
+#query {
+  font: 24px helvetica neue;
+
+
+  width:50%;
+}
+
+input{display:inline;}
+    </style>
+
+    <div class="row">
+
+
+      <div class="span12" id="fig">
+
+
+          search-graph:<input id="query" type="text" onkeyup="search(this.value);" value="(baby|damen|herren|kinder)+[a-i]">
+
+      <b>Gender:</b>
+      <input type="radio" name="gender" id="men" onchange="update(gender = 1);"
+      ><label for="men">Men</label>
+      <input type="radio" name="gender" id="women" onchange="update(gender = 2);"
+      ><label for="women">Women</label>
+      <input type="radio" name="gender" id="any" checked onchange="update(gender = 0);"
+      ><label for="any">Any</label>
+                </div>
+      </div>
 
   <!-- row -->
   <div class="row" >
@@ -85,9 +131,9 @@
                   <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
                     <span class="demo-liveupdate-1"> <span class="onoffswitch-title">Live switch</span> <span class="onoffswitch">
                         <input type="checkbox" name="start_interval" class="onoffswitch-checkbox" id="start_interval">
-                        <label class="onoffswitch-label" for="start_interval">
+                        <div class="onoffswitch-div" for="start_interval">
                           <span class="onoffswitch-inner" data-swchon-text="ON" data-swchoff-text="OFF"></span>
-                          <span class="onoffswitch-switch"></span> </label> </span> </span>
+                          <span class="onoffswitch-switch"></span> </div> </span> </span>
                     <div id="updating-chart" class="chart-large txt-color-blue"></div>
 
                   </div>
@@ -127,10 +173,10 @@
                     <span class="easy-pie-title"> Server Load <i class="fa fa-caret-up icon-color-bad"></i> </span>
                     <ul class="smaller-stat hidden-sm pull-right">
                       <li>
-                        <span class="label bg-color-greenLight"><i class="fa fa-caret-up"></i> 97%</span>
+                        <span class="div bg-color-greenLight"><i class="fa fa-caret-up"></i> 97%</span>
                       </li>
                       <li>
-                        <span class="label bg-color-blueLight"><i class="fa fa-caret-down"></i> 44%</span>
+                        <span class="div bg-color-blueLight"><i class="fa fa-caret-down"></i> 44%</span>
                       </li>
                     </ul>
                     <div class="sparkline txt-color-greenLight hidden-sm hidden-md pull-right" data-sparkline-type="line" data-sparkline-height="33px" data-sparkline-width="70px" data-fill-color="transparent">
@@ -144,10 +190,10 @@
                     <span class="easy-pie-title"> Disk Space <i class="fa fa-caret-down icon-color-good"></i></span>
                     <ul class="smaller-stat hidden-sm pull-right">
                       <li>
-                        <span class="label bg-color-blueDark"><i class="fa fa-caret-up"></i> 76%</span>
+                        <span class="div bg-color-blueDark"><i class="fa fa-caret-up"></i> 76%</span>
                       </li>
                       <li>
-                        <span class="label bg-color-blue"><i class="fa fa-caret-down"></i> 3%</span>
+                        <span class="div bg-color-blue"><i class="fa fa-caret-down"></i> 3%</span>
                       </li>
                     </ul>
                     <div class="sparkline txt-color-blue hidden-sm hidden-md pull-right" data-sparkline-type="line" data-sparkline-height="33px" data-sparkline-width="70px" data-fill-color="transparent">
@@ -161,10 +207,10 @@
                     <span class="easy-pie-title"> Transfered <i class="fa fa-caret-up icon-color-good"></i></span>
                     <ul class="smaller-stat hidden-sm pull-right">
                       <li>
-                        <span class="label bg-color-darken">10GB</span>
+                        <span class="div bg-color-darken">10GB</span>
                       </li>
                       <li>
-                        <span class="label bg-color-blueDark"><i class="fa fa-caret-up"></i> 10%</span>
+                        <span class="div bg-color-blueDark"><i class="fa fa-caret-up"></i> 10%</span>
                       </li>
                     </ul>
                     <div class="sparkline txt-color-darken hidden-sm hidden-md pull-right" data-sparkline-type="line" data-sparkline-height="33px" data-sparkline-width="70px" data-fill-color="transparent">
@@ -178,10 +224,10 @@
                     <span class="easy-pie-title"> Temperature <i class="fa fa-caret-down icon-color-good"></i></span>
                     <ul class="smaller-stat hidden-sm pull-right">
                       <li>
-                        <span class="label bg-color-red"><i class="fa fa-caret-up"></i> 124</span>
+                        <span class="div bg-color-red"><i class="fa fa-caret-up"></i> 124</span>
                       </li>
                       <li>
-                        <span class="label bg-color-blue"><i class="fa fa-caret-down"></i> 40 F</span>
+                        <span class="div bg-color-blue"><i class="fa fa-caret-down"></i> 40 F</span>
                       </li>
                     </ul>
                     <div class="sparkline txt-color-red hidden-sm hidden-md pull-right" data-sparkline-type="line" data-sparkline-height="33px" data-sparkline-width="70px" data-fill-color="transparent">
@@ -199,7 +245,7 @@
                   <form class="form-inline" role="form">
 
                     <div class="form-group">
-                      <label class="sr-only" for="s123">Show From</label>
+                      <div class="sr-only" for="s123">Show From</div>
                       <input type="email" class="form-control input-sm" id="s123" placeholder="Show From">
                     </div>
                     <div class="form-group">
@@ -234,15 +280,15 @@
 
                   <div class="inline-group">
 
-                    <label for="gra-0" class="checkbox">
+                    <div for="gra-0" class="checkbox">
                       <input type="checkbox" name="gra-0" id="gra-0" checked="checked">
-                      <i></i> Target </label>
-                    <label for="gra-1" class="checkbox">
+                      <i></i> Target </div>
+                    <div for="gra-1" class="checkbox">
                       <input type="checkbox" name="gra-1" id="gra-1" checked="checked">
-                      <i></i> Actual </label>
-                    <label for="gra-2" class="checkbox">
+                      <i></i> Actual </div>
+                    <div for="gra-2" class="checkbox">
                       <input type="checkbox" name="gra-2" id="gra-2" checked="checked">
-                      <i></i> Signups </label>
+                      <i></i> Signups </div>
                   </div>
 
                   <div class="btn-group hidden-phone pull-right">
@@ -266,9 +312,149 @@
               <!-- end s3 tab pane -->
             </div>
 
+
+    <div class="row">
+      <div id="fig"></div>
+    </div>
+</div>
+
+
+    <script type="text/javascript+protovis">
+
+/* Interaction state. */
+var gender = 0,
+    re = "";
+
+/* Flatten the tree into an array to faciliate transformation. */
+var jobs = pv.flatten(jobs)
+    .key("job")
+    .key("gender", function(g) (g == "men") ? 1 : 2)
+    .key("year", function(i) years[i])
+    .key("people")
+    .array();
+
+/*
+ * Use per-year sums to normalize the data, so we can compute a
+ * percentage. Use per-gender+job sums to determine a saturation encoding.
+ */
+var sumByYear = pv.nest(jobs)
+    .key(function(d) d.year)
+    .rollup(function(v) pv.sum(v, function(d) d.people)),
+  sumByJob = pv.nest(jobs)
+    .key(function(d) d.gender + d.job)
+    .rollup(function(v) pv.sum(v, function(d) d.people));
+
+/* Cache the percentage of people employed per year. */
+jobs.forEach(function(d) d.percent = 100 * d.people / sumByYear[d.year]);
+
+/* Sizing parameters and scales. */
+var w = window.innerWidth*0.95,
+    h = window.innerHeight*0.5,
+
+    x = pv.Scale.linear(2002, 2015).range(0, w),
+    y = pv.Scale.linear(0, 100).range(0, h),
+    color = pv.Scale.ordinal(1, 2).range("#33f", "#f33"),
+    alpha = pv.Scale.linear(pv.values(sumByJob)).range(.4, .8);
+
+/* The root panel. */
+var vis = new pv.Panel()
+    .width(w)
+    .height(h)
+    .top(9.5)
+    .left(39.5)
+    .right(20)
+    .bottom(30);
+
+/* A background bar to reset the search query.  */
+vis.add(pv.Bar)
+    .fillStyle("white")
+    .event("click", function() search(""))
+    .cursor("pointer");
+
+/* Y-axis ticks and divs. */
+vis.add(pv.Rule)
+    .data(function() y.ticks())
+    .bottom(y)
+    .strokeStyle(function(y) y ? "#ccc" : "#fff")
+  .anchor("left").add(pv.Label)
+    .text(function(d) y.tickFormat(d) + "%");
+
+/* Stack layout. */
+var area = vis.add(pv.Layout.Stack)
+    .layers(function() pv.nest(jobs.filter(test))
+        .key(function(d) d.gender + d.job)
+        .sortKeys(function(a, b) pv.reverseOrder(a.substring(1), b.substring(1)))
+        .entries())
+    .values(function(d) d.values)
+    .x(function(d) x(d.year))
+    .y(function(d) y(d.percent))
+  .layer.add(pv.Area)
+    .def("alpha", function(d) alpha(sumByJob[d.key]))
+    .fillStyle(function(d) color(d.gender).alpha(this.alpha()))
+    .cursor("pointer")
+    .event("mouseover", function(d) this.alpha(1).title(d.job))
+    .event("mouseout", function(d) this.alpha(null))
+    .event("click", function(d) search("^" + d.job + "$"));
+
+/* Stack divs. */
+vis.add(pv.Panel)
+    .extend(area.parent)
+  .add(pv.Area)
+    .extend(area)
+    .fillStyle(null)
+  .anchor("center").add(pv.Label)
+    .def("max", function(d) pv.max.index(d.values, function(d) d.percent))
+    .visible(function() this.index == this.max())
+    .font(function(d) Math.round(5 + Math.sqrt(y(d.percent))) + "px sans-serif")
+    .textMargin(6)
+    .textStyle(function(d) "rgba(0, 0, 0, " + (Math.sqrt(y(d.percent)) / 7) + ")")
+    .textAlign(function() this.index < 5 ? "left" : "right")
+    .text(function(d, p) p.key.substring(1));
+
+/* X-axis ticks and divs. */
+vis.add(pv.Rule)
+    .data(pv.range(2002, 2015,1))
+    .left(x)
+    .bottom(-6)
+    .height(5)
+  .anchor("bottom").add(pv.Label);
+
+/* Update the query regular expression when text is entered. */
+function search(text) {
+
+  if (text != re) {
+    if (query.value != text) {
+      query.value = text;
+      query.focus();
+    }
+    re = new RegExp(text, "i");
+    update();
+  }
+
+
+}
+
+/* Tests to see whether the specified datum matches the current filters. */
+function test(d) {
+  return (!gender || d.gender == gender) && d.job.match(re);
+}
+
+/* Recompute the y-scale domain based on query filtering. */
+function update() {
+  y.domain(0, Math.min(100, pv.max(pv.values(pv.nest(jobs.filter(test))
+      .key(function(d) d.year)
+      .rollup(function(v) pv.sum(v, function(d) d.percent))))));
+  vis.render();
+setTimeout(function() {},3000);
+}
+
+vis.render();
+search($("#query").val());
+    </script>
+
             <!-- end content -->
           </div>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
         </div>
         <!-- end widget div -->
       </div>
@@ -290,10 +476,10 @@
     <script src="../js/bootstrap.min.js"></script>
 
     <!-- EASY PIE CHARTS -->
-    <script src="../js/plugin/easy-pie-chart/jquery.easy-pie-chart.min.js"></script>
+    <script src="../js/plugin/easy-pie-chart/jquery.easy-pie-chart.min.js"async ></script>
 
     <!-- SPARKLINES -->
-    <script src="../js/plugin/sparkline/jquery.sparkline.min.js"></script>
+    <script src="../js/plugin/sparkline/jquery.sparkline.min.js"async ></script>
     <script src="../js/app.js"></script>
 <script type="text/javascript" class="ng-scope">
   /* DO NOT REMOVE : GLOBAL FUNCTIONS!
@@ -540,7 +726,7 @@
                     [13, 47]
                 ],
                 data = [{
-                    label: "Twitter",
+                    div: "Twitter",
                     data: twitter,
                     lines: {
                         show: true,
@@ -558,7 +744,7 @@
                         show: true
                     }
                 }, {
-                    label: "Facebook",
+                    div: "Facebook",
                     data: facebook,
                     lines: {
                         show: true,
@@ -665,7 +851,7 @@
                 target = $("#flotcontainer");
 
             var data = [{
-                label: "Target Profit",
+                div: "Target Profit",
                 data: trgt,
                 bars: {
                     show: true,
@@ -673,7 +859,7 @@
                     barWidth: 30 * 30 * 60 * 1000 * 80
                 }
             }, {
-                label: "Actual Profit",
+                div: "Actual Profit",
                 data: prft,
                 color: '#3276B1',
                 lines: {
@@ -684,7 +870,7 @@
                     show: true
                 }
             }, {
-                label: "Actual Signups",
+                div: "Actual Signups",
                 data: sgnups,
                 color: '#71843F',
                 lines: {
@@ -955,6 +1141,8 @@
   // run pagefunction on load
   pagefunction();
 
+
+  $("#query").focus();
 
 </script>
 

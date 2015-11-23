@@ -11,6 +11,8 @@
 
     <title>Timeline</title>
     <script src="assets/js/jquery-1.7.1.min.js"></script>
+    <script src="assets/js/uri.js"></script>
+
     <link href="assets/css/toolkit-inverse.css" rel="stylesheet">
     <link href="assets/css/application.css" rel="stylesheet">
     <!-- Our Stylesheet -->
@@ -135,8 +137,9 @@
     <script src="assets/js/script.js"></script>
     <script>
 
-
         $(document).ready(function() {
+
+        var url = document.location.href;
 
             $('.menu-toggle').click(function(e){
 
@@ -196,6 +199,13 @@
 
                 alert('You clicked the ' + buttonFunction + ' button.');
             })
+
+
+        if(URLParser(url).getHash().match("stats"))
+         {
+
+            $('.menu-togglex').click();
+         }
 
         });
 
