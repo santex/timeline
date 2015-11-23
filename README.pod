@@ -1,0 +1,23 @@
+
+=head1 DESCRIPTION
+
+web app around a timeline
+
+=head1 STATUS
+
+not yet operational.
+
+=head1 SYNOPSIS
+
+visit L<http://santex.github.io/timeline/> in your browser.
+
+=head1 AUTHOR
+
+Hagen Geissler, E<lt>santex@cpan.orgE<gt>
+
+=head1 LICENSE
+
+This library is free software; you can redistribute it and/or modify
+
+
+=cut
