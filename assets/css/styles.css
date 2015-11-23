@@ -1,0 +1,796 @@
+/*-------------------------
+  Simple reset
+--------------------------*/
+
+
+*{
+  margin:0;
+  padding:0;
+}
+
+
+/*-------------------------
+  General Styles
+--------------------------*/
+
+
+html{
+  background:url('../img/page_bg.jpg') repeat #191919;
+}
+
+
+body{
+  min-height: 700px;
+    padding: 0 0 50px;
+  font:14px/1.3 'Segoe UI',Arial, sans-serif;
+  overflow:hidden;
+}
+
+a, a:visited {
+  text-decoration:none;
+  outline:none;
+  color:#54a6de;
+}
+
+a:hover{
+  text-decoration:underline;
+}
+
+section, footer, header{
+  display: block;
+}
+
+
+/*----------------------------
+  Styling the timeline
+-----------------------------*/
+
+
+#timeline{
+  background:none;
+}
+
+.slider .slider-container-mask .slider-container{
+  background:none;
+}
+
+#timeline div.navigation{
+    background: url('../img/timeline_bg.jpg') repeat;
+    border-top:none;
+}
+
+/* Creating the 3D effect for the timeline navigation */
+
+#timeline div.navigation:before{
+  position:absolute;
+  content:'';
+  height:40px;
+  width:100%;
+  left:0;
+  top:-40px;
+  background: url('../img/timeline_bg.jpg') repeat;
+}
+
+#timeline div.navigation:after{
+  position:absolute;
+  content:'';
+  height:10px;
+  width:100%;
+  left:0;
+  top:-40px;
+  background:repeat-x;
+
+  background-image: linear-gradient(bottom, #434446 0%, #363839 100%);
+  background-image: -o-linear-gradient(bottom, #434446 0%, #363839 100%);
+  background-image: -moz-linear-gradient(bottom, #434446 0%, #363839 100%);
+  background-image: -webkit-linear-gradient(bottom, #434446 0%, #363839 100%);
+  background-image: -ms-linear-gradient(bottom, #434446 0%, #363839 100%);
+}
+
+
+/* Adding a darker background to the timeline navigation */
+
+#timeline div.timenav-background{
+  background-color:#222 !important;
+  background-color:rgba(0,0,0,0.4) !important;
+
+}
+
+#timeline .navigation .timenav-background .timenav-interval-background{
+  background:none;
+}
+
+#timeline .top-highlight{
+  background-color:transparent !important;
+}
+
+/* The zoom-in / zoom-out toolbar */
+
+#timeline .toolbar{
+  border:none !important;
+  background-color: #202222 !important;
+}
+
+#timeline .toolbar div{
+  border:none !important;
+}
+
+/* Styling the timeline numbers on the bottom */
+
+#timeline .navigation .timenav .time .time-interval-minor .minor{
+  margin-left:-1px;
+}
+
+#timeline .navigation .timenav .time .time-interval div{
+  color: #CCCCCC;
+}
+
+/* The vertical lines */
+
+#timeline .navigation .timenav .content .marker .line {
+  background: #242828;
+  box-shadow: 1px 0 0 rgba(255, 255, 255, 0.05);
+}
+
+#timeline .navigation .timenav .content .marker .dot {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-radius: 3px 3px 3px 3px;
+}
+
+/* The previous / next arrows & labels */
+
+.slider .nav-previous .icon {
+  background: url("timeline.png") no-repeat scroll 0 -293px transparent;
+}
+
+.slider .nav-previous,.slider .nav-next{
+  font-family:'Segoe UI',sans-serif;
+}
+
+.slider .nav-next .icon {
+  background: url("timeline.png") no-repeat scroll 72px -221px transparent;
+
+
+}
+
+.slider .nav-next:hover .icon{
+  position:relative;
+  right:-5px;
+}
+
+.slider .nav-previous:hover, .slider .nav-next:hover {
+    color: #666;
+    cursor: pointer;
+}
+
+#timeline .thumbnail {
+  border: medium none;
+}
+
+/* Color of the headings */
+
+#timeline h1, #timeline h2, #timeline h3, #timeline h4, #timeline h5, #timeline h6{
+  color:#ddd;
+}
+
+/* The loading screen */
+
+#timeline .feedback {
+  background-color: #222222;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2) inset;
+  border:none;
+}
+
+#timeline .feedback div{
+  color: #AAAAAA;
+  font-size: 14px !important;
+  font-weight: normal;
+}
+
+
+/*----------------------------
+  The Slides
+-----------------------------*/
+
+
+#timeline .slider-item h2,
+#timeline .slider-item h3{
+  font-family:'Antic Slab','Segoe UI',sans-serif;
+}
+
+#timeline .slider-item h2{
+  color:#fff;
+}
+
+#timeline .slider-item p{
+  font-family:'Segoe UI',sans-serif;
+}
+
+
+#timeline .slider-item img,
+#timeline .slider-item iframe{
+  border:none;
+}
+
+/* Customizing the first slide - the cover */
+
+#timeline .slider-item:nth-child(1) h2{
+  font:normal 70px/1 'Antic Slab','Segoe UI',sans-serif;
+ /* background:rgba(0,0,0,0.3);*/
+  white-space: nowrap;
+  padding:10px 5px 5px 20px;
+  position:relative;
+  right:-60px;
+  z-index:10;
+}
+
+#timeline .slider-item:nth-child(1) p i{
+  font:normal normal 40px 'Dancing Script','Segoe UI',sans-serif;
+  /*background:rgba(0,0,0,0.3);*/
+  white-space: nowrap;
+  padding:5px 20px;
+  position:relative;
+  right:-60px;
+  z-index:10;
+}
+
+#timeline .slider-item:nth-child(1) p .c1{
+  color:#1bdff0;
+}
+
+#timeline .slider-item:nth-child(1) p .c2{
+  color:#c92fe6;
+}
+
+#timeline .slider-item:nth-child(1) .media-container {
+  left: -30px;
+  position: relative;
+  z-index: 1;
+}
+
+#timeline .slider-item:nth-child(1) .credit{
+  text-align: center;
+}
+
+
+/*----------------------------
+  Back to Tzine header
+-----------------------------*/
+
+
+header{
+  width:100%;
+  height:32px;
+  position:fixed;
+  top:0;
+  left:0;
+  background:rgba(255,255,255,0.3);
+  padding:5px;
+  z-index: 1000;
+  box-shadow: 0 0 2px #000000;
+}
+
+
+.side-menu-advanced{
+    position: fixed;
+    left: 0;
+    top: 50px;
+    height: 100%;
+    width: 100% ;
+    box-sizing: border-box;
+    background-color:  #222427;
+    box-shadow: 2px 0 5px 0 rgba(255, 230, 231, 0.4);
+    z-index: 100000;
+    color: #ffffff;
+    font: bold 16px Arial, Helvetica, sans-serif;
+    -webkit-transition: 0.4s ease-in;
+    transition: 0.4s ease-in;
+    -webkit-transform: translateX(-101%);
+    transform:translateX(-101%);
+}
+
+.side-menu-advanced.side-menu-shown{
+    -webkit-transform: translateX(0);
+    transform:translateX(0);
+}
+
+/* Scrollable container for the side menu options */
+
+.side-menu-advanced .side-menu-content{
+    overflow: auto;
+    max-height: 100%;
+    padding: 20px 32px 20px;
+}
+
+/* Titles */
+
+.side-menu-advanced .side-menu-section-title {
+    display: block;
+    color: #74839a;
+    font-size: 11px;
+    margin: 0 0 25px;
+}
+
+/* Profile section */
+
+.side-menu-user-profile-section{
+    margin-bottom: 38px;
+    overflow: hidden;
+}
+
+.side-menu-user-profile-section img{
+    display: block;
+    float: left;
+    border-radius: 50%;
+    margin-right: 11px;
+}
+
+.side-menu-user-profile-section a{
+    display: block;
+    margin-top: 8px;
+    text-decoration: none;
+    color: #fefefe;
+    font-size: 14px;
+}
+
+.side-menu-user-profile-section span{
+    color:  #74839a;
+    font-size: 11px;
+}
+
+/* Account limits section */
+
+.side-menu-account-limits-section{
+    margin-bottom: 45px;
+}
+
+.side-menu-account-limits{
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.side-menu-account-limits span{
+    float: right;
+}
+
+.side-menu-progress-bar{
+    height: 4px;
+    background-color: #383c43;
+    margin: 9px 0 17px;
+}
+
+.side-menu-progress-bar span{
+    height: 4px;
+    display: block;
+    background-color:  #39b54a;
+}
+
+.side-menu-button{
+    box-sizing: border-box;
+    display: block;
+    color: inherit;
+    font: inherit;
+    font-size: 13px;
+    text-decoration: none;
+
+    width: 150px;
+    background-color:  #345e7e;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    padding: 10px 22px;
+    margin-top: 28px;
+}
+
+
+/* Actions section */
+
+.side-menu-actions-section{
+    margin-bottom: 120px;
+}
+
+.side-menu-actions-section .side-menu-row{
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.side-menu-actions-section .side-menu-row a{
+    text-decoration: none;
+    color: inherit;
+    max-width: 150px;
+    float: left;
+}
+
+.side-menu-actions-section .side-menu-row i{
+    float: right;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+/* The logo */
+
+.side-menu-advanced .side-menu-logo{
+    display: block;
+
+    color: inherit;
+    text-decoration: none;
+    font: normal 50px 'Cookie', cursive;
+    line-height: 122px;
+    text-align: center;
+    width: 122px;
+    border-radius: 50%;
+    background-color: #151617;
+    margin:0 auto;
+}
+
+
+/* Close button */
+
+.side-menu-advanced .side-menu-close{
+    position: absolute;
+    right: -52px;
+    top: 15px;
+    width: 35px;
+
+    display: none;
+    font-size: 18px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    background-color:  #ed145b;
+    cursor: pointer;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.side-menu-advanced.side-menu-shown .side-menu-close{
+    display: block;
+}
+
+
+.side-menux-advanced{
+    position: fixed;
+    left: 0;
+    top: 50px;
+    height: 100%;
+    width: 100% ;
+    box-sizing: border-box;
+    background-color:  #222427;
+    box-shadow: 2px 0 5px 0 rgba(255, 230, 231, 0.4);
+    z-index: 100000;
+    color: #ffffff;
+    font: bold 16px Arial, Helvetica, sans-serif;
+    -webkit-transition: 0.4s ease-in;
+    transition: 0.4s ease-in;
+    -webkit-transform: translateX(-101%);
+    transform:translateX(-101%);
+}
+
+.side-menux-advanced.side-menux-shown{
+    -webkit-transform: translateX(0);
+    transform:translateX(0);
+}
+
+/* Scrollable container for the side menu options */
+
+.side-menux-advanced .side-menux-content{
+    overflow: auto;
+    max-height: 100%;
+    padding: 20px 32px 20px;
+}
+
+/* Titles */
+
+.side-menux-advanced .side-menux-section-title {
+    display: block;
+    color: #74839a;
+    font-size: 11px;
+    margin: 0 0 25px;
+}
+
+/* Profile section */
+
+.side-menux-user-profile-section{
+    margin-bottom: 38px;
+    overflow: hidden;
+}
+
+.side-menux-user-profile-section img{
+    display: block;
+    float: left;
+    border-radius: 50%;
+    margin-right: 11px;
+}
+
+.side-menux-user-profile-section a{
+    display: block;
+    margin-top: 8px;
+    text-decoration: none;
+    color: #fefefe;
+    font-size: 14px;
+}
+
+.side-menux-user-profile-section span{
+    color:  #74839a;
+    font-size: 11px;
+}
+
+/* Account limits section */
+
+.side-menux-account-limits-section{
+    margin-bottom: 45px;
+}
+
+.side-menux-account-limits{
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.side-menux-account-limits span{
+    float: right;
+}
+
+.side-menux-progress-bar{
+    height: 4px;
+    background-color: #383c43;
+    margin: 9px 0 17px;
+}
+
+.side-menux-progress-bar span{
+    height: 4px;
+    display: block;
+    background-color:  #39b54a;
+}
+
+.side-menux-button{
+    box-sizing: border-box;
+    display: block;
+    color: inherit;
+    font: inherit;
+    font-size: 13px;
+    text-decoration: none;
+
+    width: 150px;
+    background-color:  #345e7e;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    padding: 10px 22px;
+    margin-top: 28px;
+}
+
+
+/* Actions section */
+
+.side-menux-actions-section{
+    margin-bottom: 120px;
+}
+
+.side-menux-actions-section .side-menux-row{
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.side-menux-actions-section .side-menux-row a{
+    text-decoration: none;
+    color: inherit;
+    max-width: 150px;
+    float: left;
+}
+
+.side-menux-actions-section .side-menux-row i{
+    float: right;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+/* The logo */
+
+.side-menux-advanced .side-menux-logo{
+    display: block;
+
+    color: inherit;
+    text-decoration: none;
+    font: normal 50px 'Cookie', cursive;
+    line-height: 122px;
+    text-align: center;
+    width: 122px;
+    border-radius: 50%;
+    background-color: #151617;
+    margin:0 auto;
+}
+
+
+/* Close button */
+
+.side-menux-advanced .side-menux-close{
+    position: absolute;
+    right: -52px;
+    top: 15px;
+    width: 35px;
+
+    display: none;
+    font-size: 18px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    background-color:  #ed145b;
+    cursor: pointer;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.side-menux-advanced.side-menux-shown .side-menux-close{
+    display: block;
+}
+
+
+.free {
+    animation : none;
+    animation-delay : 0;
+    animation-direction : normal;
+    animation-duration : 0;
+    animation-fill-mode : none;
+    animation-iteration-count : 1;
+    animation-name : none;
+    animation-play-state : running;
+    animation-timing-function : ease;
+    backface-visibility : visible;
+    background : 0;
+    background-attachment : scroll;
+    background-clip : border-box;
+    background-color : transparent;
+    background-image : none;
+    background-origin : padding-box;
+    background-position : 0 0;
+    background-position-x : 0;
+    background-position-y : 0;
+    background-repeat : repeat;
+    background-size : auto auto;
+    border : 0;
+    border-style : none;
+    border-width : medium;
+    border-color : inherit;
+    border-bottom : 0;
+    border-bottom-color : inherit;
+    border-bottom-left-radius : 0;
+    border-bottom-right-radius : 0;
+    border-bottom-style : none;
+    border-bottom-width : medium;
+    border-collapse : separate;
+    border-image : none;
+    border-left : 0;
+    border-left-color : inherit;
+    border-left-style : none;
+    border-left-width : medium;
+    border-radius : 0;
+    border-right : 0;
+    border-right-color : inherit;
+    border-right-style : none;
+    border-right-width : medium;
+    border-spacing : 0;
+    border-top : 0;
+    border-top-color : inherit;
+    border-top-left-radius : 0;
+    border-top-right-radius : 0;
+    border-top-style : none;
+    border-top-width : medium;
+    bottom : auto;
+    box-shadow : none;
+    box-sizing : content-box;
+    caption-side : top;
+    clear : none;
+    clip : auto;
+    color : inherit;
+    columns : auto;
+    column-count : auto;
+    column-fill : balance;
+    column-gap : normal;
+    column-rule : medium none currentColor;
+    column-rule-color : currentColor;
+    column-rule-style : none;
+    column-rule-width : none;
+    column-span : 1;
+    column-width : auto;
+    content : normal;
+    counter-increment : none;
+    counter-reset : none;
+    cursor : auto;
+    direction : ltr;
+    display : inline;
+    empty-cells : show;
+    float : none;
+    font : normal;
+    font-family : inherit;
+    font-size : medium;
+    font-style : normal;
+    font-variant : normal;
+    font-weight : normal;
+    height : auto;
+    hyphens : none;
+    left : auto;
+    letter-spacing : normal;
+    line-height : normal;
+    list-style : none;
+    list-style-image : none;
+    list-style-position : outside;
+    list-style-type : disc;
+    margin : 0;
+    margin-bottom : 0;
+    margin-left : 0;
+    margin-right : 0;
+    margin-top : 0;
+    max-height : none;
+    max-width : none;
+    min-height : 0;
+    min-width : 0;
+    opacity : 1;
+    orphans : 0;
+    outline : 0;
+    outline-color : invert;
+    outline-style : none;
+    outline-width : medium;
+    overflow : visible;
+    overflow-x : visible;
+    overflow-y : visible;
+    padding : 0;
+    padding-bottom : 0;
+    padding-left : 0;
+    padding-right : 0;
+    padding-top : 0;
+    page-break-after : auto;
+    page-break-before : auto;
+    page-break-inside : auto;
+    perspective : none;
+    perspective-origin : 50% 50%;
+    position : static;
+    /* May need to alter quotes for different locales (e.g fr) */
+    quotes : '\201C' '\201D' '\2018' '\2019';
+    right : auto;
+    tab-size : 8;
+    table-layout : auto;
+    text-align : inherit;
+    text-align-last : auto;
+    text-decoration : none;
+    text-decoration-color : inherit;
+    text-decoration-line : none;
+    text-decoration-style : solid;
+    text-indent : 0;
+    text-shadow : none;
+    text-transform : none;
+    top : auto;
+    transform : none;
+    transform-style : flat;
+    transition : none;
+    transition-delay : 0s;
+    transition-duration : 0s;
+    transition-property : none;
+    transition-timing-function : ease;
+    unicode-bidi : normal;
+    vertical-align : baseline;
+    visibility : visible;
+    white-space : normal;
+    widows : 0;
+    width : auto;
+    word-spacing : normal;
+    z-index : auto;
+}
+
+/* Making the side menu adapt to the screen size */
+
+@media (max-width: 400px){
+
+    .side-menu-advanced{
+        width: 260px;
+    }
+
+    .side-menu-advanced .side-menu-close{
+        right: -45px;
+    }
+}
+
+@media (max-height: 840px){
+    .side-menu-advanced .side-menu-logo{
+        display: none;
+    }
+}
+
+
