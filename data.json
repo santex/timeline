@@ -4,16 +4,16 @@
     {
         "headline":"&nbsp;",
         "type":"default",
-        "startDate":"2009",
+        "startDate":"2008,2",
         "text":"<i></i>",
         "date": [
-            {
-                "startDate":"2009,2",
-                "headline":"My first experiment in time-lapse photography",
-                "text":"Nature at its finest in this video.",
+             {
+                "startDate":"2009,7",
+                "headline":"Another time-lapse experiment",
+                "text":"",
                 "asset":
                 {
-                    "media":"http://vimeo.com/22439234",
+                    "media":"http://vimeo.com/23237102",
                     "credit":"",
                     "caption":""
                 }

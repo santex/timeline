@@ -1,7 +1,6 @@
-
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,207 +9,284 @@
     <meta name="author" content="">
 
     <title>Timeline</title>
-    <script src="assets/js/jquery-1.7.1.min.js"></script>
-    <script src="assets/js/uri.js"></script>
 
+
+    <script src="assets/js/jquery-1.7.1.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/uri.js"></script>
+    <script src="assets/js/d3.v3.min.js"></script>
+
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/css/ashbury-d3.css" rel="stylesheet" />
     <link href="assets/css/toolkit-inverse.css" rel="stylesheet">
     <link href="assets/css/application.css" rel="stylesheet">
     <!-- Our Stylesheet -->
-    <link rel="stylesheet" href="assets/css/timeline.css" />
+
     <link rel="stylesheet" href="assets/css/styles.css" />
-    <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/timeline.css" />
+
 
     <style>
       /* note: this is a hack for ios iframe for bootstrap themes shopify page */
       /* this chunk of css is not part of the toolkit :) */
-      body {
-        width: 1px;
-        min-width: 100%;
-        *width: 100%;
-      }
+
+
         header * {
-      box-sizing: border-box;
-    }
+          box-sizing: border-box;
+        }
+        #nav-search{
+          max-height:32px;
+          margin:0px;
+        }
 
+
+        .nav-tabs{
+          margin:100px 30px 2% 30px;
+                }
+
+
+#contentx{
+background-color: #fff;
+
+
+
+}
+
+#timeline{
+min-height:400px;
+height:80%;
+margin-top:50px;
+bottom:0px;
+max-height:800px;
+overflow:hidden;
+
+background-color: #fff;
+
+}
+        footer {
+          position:fixed;
+          bottom:0px;
+          left:0px;
+          width:100%;
+              line-height: 1.5;
+    color: #cfd2da;
+
+        }
     </style>
-  </head>
-<body class="ts">
-<header>
-  <nav class="ci ou g">
-    <div class="ft ui">
-      <div class="oj">
-        <button type="button" class="om collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="ct">Toggle navigation</span>
-          <span class="on"></span>
-          <span class="on"></span>
-          <span class="on"></span>
-        </button>
-        <a class="ol tu" href="#">
-          <span class="bv act tt"></span>
-          Timeline
-        </a>
-      </div>
-      <div id="navbar" class="ok collapse">
-        <ul class="nav navbar-nav">
-          <li >
-            <a href="#" class="menu-toggle" data-show-dialog="side-menu-advanced">Menue</a>
-          </li>
-          <li >
-            <a href="#" class="menu-togglex" data-show-dialog="side-menux-advanced">Stats</a>
-          </li>
+    </head>
+    <body>
 
-        </ul>
-        <form class="fa oo ny">
-          <div class="aol">
-            <input class="form-control" type="text" placeholder="Search...">
-            <span class="bv adn"></span>
+          <header style="">
+            <nav class="ci ou g">
+              <div class="ft ui">
+                <div class="oj">
+                  <button type="button" class="om collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="ct">Toggle navigation</span>
+                    <span class="on"></span>
+                    <span class="on"></span>
+                    <span class="on"></span>
+                  </button>
+                  <a class="ol tu" href="#">
+                    <span class="bv act tt"></span>
+                    Timeline
+                  </a>
+                </div>
+                <div id="navbar" class="ok collapse">
+                  <ul class="nav navbar-nav">
+                    <li>
+                      <a href="#" class="menu-toggle" data-show-dialog="side-menu-advanced">Menue</a>
+                    </li>
+                    <li>
+                      <a href="#" class="menu-togglex" data-show-dialog="side-menux-advanced">Stats</a>
+                    </li>
+
+                  </ul>
+                  <form class="fa oo ny">
+                    <div class="aol">
+                      <input class="form-control" type="text" placeholder="Search..." id="nav-search">
+                      <span class="bv adn"></span>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </nav>
+          </header>
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#wheel-wrapper" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+            <li role="presentation"><a href="#timeline" aria-controls="timeline" role="tab" data-toggle="tab">Timeline</a></li>
+            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+            <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+            <div style="float:right; margin-top:14px">
+            <a href="/wheel?q=Flower-0.10&amp;runtime=1&amp;fs=1" target="_blank">
+                <i class="icon-external-link tt" data-toggle="tooltip" data-placement="left" title="" data-original-title="Open full screen in new window"></i>
+            </a>
+          </ul>
+
+
+          <!-- Tab panes -->
+          <div  id="contentx">
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="wheel-wrapper">
+              <div id="wheel" data-json-url="data"></div>
+              <div class="spinner"></div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="timeline">
+
+
+
+            </div>
+            <div role="tabpanel" class="tab-pane" id="messages">...</div>
+            <div role="tabpanel" class="tab-pane" id="settings">...</div>
           </div>
-        </form>
+          </div>
+
+
+
+      <div class="side-menux-advanced">
+        <iframe src="assets/ajax/dashboard.html" scrolling="no" frameborder="0" width="100%" height="100%"></iframe>
       </div>
-    </div>
-  </nav>
-</header>
 
-    <aside class="side-menu-advanced">
+      <aside class="side-menu-advanced">
 
-        <div class="side-menu-content">
-            <!---//
-            <div class="side-menu-user-profile-section">
+          <div class="side-menu-content">
+              <!---//
+              <div class="side-menu-user-profile-section">
 
-                <a href="#">.</a>
-                <span>....</span>
-            </div>
+                  <a href="#">.</a>
+                  <span>....</span>
+              </div>
 
-            <p class="side-menu-section-title"> Account limits</p>
+              <p class="side-menu-section-title"> Account limits</p>
 
-            <a href="#" class="side-menu-button" data-function="Upgrade">Upgrade to PRO</a>
+              <a href="#" class="side-menu-button" data-function="Upgrade">Upgrade to PRO</a>
 
-            //--->
+              //--->
 
-            <div class="side-menu-account-limits-section">
+              <div class="side-menu-account-limits-section">
 
 
 
-                <p class="side-menu-account-limits">
-                    surveys
-                    <span>10/15</span>
-                </p>
+                  <p class="side-menu-account-limits">
+                      surveys
+                      <span>10/15</span>
+                  </p>
 
-                <div class="side-menu-progress-bar">
-                    <span style="width: 66.6%"></span>
-                </div>
+                  <div class="side-menu-progress-bar">
+                      <span style="width: 66.6%"></span>
+                  </div>
 
-                <p class="side-menu-account-limits">
-                    respondents
-                    <span>214/1000</span>
-                </p>
+                  <p class="side-menu-account-limits">
+                      respondents
+                      <span>214/1000</span>
+                  </p>
 
-                <div class="side-menu-progress-bar">
-                    <span style="width: 15.3%"></span>
-                </div>
+                  <div class="side-menu-progress-bar">
+                      <span style="width: 15.3%"></span>
+                  </div>
 
-                <p class="side-menu-account-limits">
-                    answers
-                    <span>74/150</span>
-                </p>
+                  <p class="side-menu-account-limits">
+                      answers
+                      <span>74/150</span>
+                  </p>
 
-                <div class="side-menu-progress-bar">
-                    <span style="width: 50%"></span>
-                </div>
-            </div>
-        </div>
-        <span class="side-menu-close"><i class="fa fa-close"></i></span>
-    </aside>
-    <div class="side-menux-advanced">
-      <iframe src="assets/ajax/dashboard.html" scrolling="no" frameborder="0" width="100%" height="100%"></iframe>
-    </div>
+                  <div class="side-menu-progress-bar">
+                      <span style="width: 50%"></span>
+                  </div>
+              </div>
+          </div>
+          <span class="side-menu-close"><i class="fa fa-close"></i></span>
+      </aside>
 
 
-    <div id="timeline" style="margin-top:-50px;">
-      <!-- Timeline.js will genereate the markup here -->
-    </div>
+          <script src="assets/js/d3.prereqs.js"></script>
+          <script src="assets/js/timeline-min.js"></script>
 
-    <script src="assets/js/bootstrap.min.js"></script>
-    <!-- JavaScript includes - jQuery, turn.js and our own script.js -->
 
-    <script src="assets/js/timeline-min.js"></script>
-    <script src="assets/js/script.js"></script>
-    <script>
+      <script>
 
-        $(document).ready(function() {
+          $(document).ready(function() {
 
-        var url = document.location.href;
 
-            $('.menu-toggle').click(function(e){
+            $(function(){
 
-                var menu = $(this).data('show-dialog');
-
-                $('.' + menu).toggleClass('side-menu-shown');
+              var timeline = new VMM.Timeline();
+              timeline.init("data.json");
 
             });
 
-            $('.side-menu-close').on('click', function () {
-                $('.side-menu-advanced').removeClass('side-menu-shown');
-            });
+          var url = document.location.href;
 
-            $('.side-menu-option').on('click', function (e) {
-                e.preventDefault();
+              $('.menu-toggle').click(function(e){
 
-                var option = $(this).data('id');
+                  var menu = $(this).data('show-dialog');
 
-                alert('You chose option ' + option);
-            });
+                  $('.' + menu).toggleClass('side-menu-shown');
 
-            $('.side-menu-button').on('click', function (e) {
-                e.preventDefault();
+              });
 
-                var buttonFunction = $(this).data('function');
+              $('.side-menu-close').on('click', function () {
+                  $('.side-menu-advanced').removeClass('side-menu-shown');
+              });
 
-                alert('You clicked the ' + buttonFunction + ' button.');
-            })
+              $('.side-menu-option').on('click', function (e) {
+                  e.preventDefault();
 
+                  var option = $(this).data('id');
 
+                  alert('You chose option ' + option);
+              });
 
-            $('.menu-togglex').click(function(e){
+              $('.side-menu-button').on('click', function (e) {
+                  e.preventDefault();
 
-                var menu = $(this).data('show-dialog');
+                  var buttonFunction = $(this).data('function');
 
-                $('.' + menu).toggleClass('side-menux-shown');
-
-
-            });
-
-            $('.side-menux-close').on('click', function () {
-                $('.side-menux-advanced').removeClass('side-menux-shown');
-            });
-
-            $('.side-menux-option').on('click', function (e) {
-                e.preventDefault();
-
-                var option = $(this).data('id');
-
-                alert('You chose option ' + option);
-            });
-
-            $('.side-menux-button').on('click', function (e) {
-                e.preventDefault();
-
-                var buttonFunction = $(this).data('function');
-
-                alert('You clicked the ' + buttonFunction + ' button.');
-            })
-
-
-        if(URLParser(url).getHash().match("stats"))
-         {
-
-            $('.menu-togglex').click();
-         }
-
-        });
+                  alert('You clicked the ' + buttonFunction + ' button.');
+              })
 
 
 
-    </script>
+              $('.menu-togglex').click(function(e){
+
+                  var menu = $(this).data('show-dialog');
+
+                  $('.' + menu).toggleClass('side-menux-shown');
+
+
+              });
+
+              $('.side-menux-close').on('click', function () {
+                  $('.side-menux-advanced').removeClass('side-menux-shown');
+              });
+
+              $('.side-menux-option').on('click', function (e) {
+                  e.preventDefault();
+
+                  var option = $(this).data('id');
+
+                  alert('You chose option ' + option);
+              });
+
+              $('.side-menux-button').on('click', function (e) {
+                  e.preventDefault();
+
+                  var buttonFunction = $(this).data('function');
+
+                  alert('You clicked the ' + buttonFunction + ' button.');
+              })
+
+
+          if(URLParser(url).getHash().match("stats"))
+           {
+
+              $('.menu-togglex').click();
+           }
+
+          });
+
+
+
+      </script>
     </body>
 </html>

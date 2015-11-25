@@ -37,7 +37,7 @@
     <style type="text/css">
 
 #fig {
-  padding:1px;
+  padding:10px;
   font-size:1.4em;
   margin-left: 40px;
 }
@@ -64,7 +64,7 @@ input{display:inline;}
       <div class="span12" id="fig">
 
 
-          search-graph:<input id="query" type="text" onkeyup="search(this.value);" value="(baby|damen|herren|kinder)+[a-d]">
+          search-graph:<input id="query" type="text" onkeyup="search(this.value);" value="(baby|damen|herren|kinder)+[a-i]">
 
       <b>Gender:</b>
       <input type="radio" name="gender" id="men" onchange="update(gender = 1);"
@@ -136,19 +136,19 @@ input{display:inline;}
                   <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 show-stats">
 
                     <div class="row">
-                      <div class="col-xs-6 col-sm-6 col-md-12 col-lg-12"> <span class="text"> state/A <span class="pull-right"></span> </span>
+                      <div class="col-xs-6 col-sm-6 col-md-12 col-lg-12"> <span class="text"> My Tasks <span class="pull-right">130/200</span> </span>
                         <div class="progress">
                           <div class="progress-bar bg-color-blueDark" style="width: 65%;"></div>
                         </div> </div>
-                      <div class="col-xs-6 col-sm-6 col-md-12 col-lg-12"> <span class="text"> state/B <span class="pull-right"></span> </span>
+                      <div class="col-xs-6 col-sm-6 col-md-12 col-lg-12"> <span class="text"> Transfered <span class="pull-right">440 GB</span> </span>
                         <div class="progress">
                           <div class="progress-bar bg-color-blue" style="width: 34%;"></div>
                         </div> </div>
-                      <div class="col-xs-6 col-sm-6 col-md-12 col-lg-12"> <span class="text">state/C<span class="pull-right"></span> </span>
+                      <div class="col-xs-6 col-sm-6 col-md-12 col-lg-12"> <span class="text"> Bugs Squashed<span class="pull-right">77%</span> </span>
                         <div class="progress">
                           <div class="progress-bar bg-color-blue" style="width: 77%;"></div>
                         </div> </div>
-                      <div class="col-xs-6 col-sm-6 col-md-12 col-lg-12"> <span class="text"> state/D <span class="pull-right"></span> </span>
+                      <div class="col-xs-6 col-sm-6 col-md-12 col-lg-12"> <span class="text"> User Testing <span class="pull-right">7 Days</span> </span>
                         <div class="progress">
                           <div class="progress-bar bg-color-greenLight" style="width: 84%;"></div>
                         </div> </div>
@@ -166,7 +166,7 @@ input{display:inline;}
                     <div class="easy-pie-chart txt-color-orangeDark" data-percent="33" data-pie-size="50">
                       <span class="percent percent-sign">35</span>
                     </div>
-                    <span class="easy-pie-title"> factor/A <i class="fa fa-caret-up icon-color-bad"></i> </span>
+                    <span class="easy-pie-title"> Server Load <i class="fa fa-caret-up icon-color-bad"></i> </span>
                     <ul class="smaller-stat hidden-sm pull-right">
                       <li>
                         <span class="div bg-color-greenLight"><i class="fa fa-caret-up"></i> 97%</span>
@@ -183,7 +183,7 @@ input{display:inline;}
                     <div class="easy-pie-chart txt-color-greenLight" data-percent="78.9" data-pie-size="50">
                       <span class="percent percent-sign">78.9 </span>
                     </div>
-                    <span class="easy-pie-title"> factor/B <i class="fa fa-caret-down icon-color-good"></i></span>
+                    <span class="easy-pie-title"> Disk Space <i class="fa fa-caret-down icon-color-good"></i></span>
                     <ul class="smaller-stat hidden-sm pull-right">
                       <li>
                         <span class="div bg-color-blueDark"><i class="fa fa-caret-up"></i> 76%</span>
@@ -200,7 +200,7 @@ input{display:inline;}
                     <div class="easy-pie-chart txt-color-blue" data-percent="23" data-pie-size="50">
                       <span class="percent percent-sign">23 </span>
                     </div>
-                    <span class="easy-pie-title"> factor/C <i class="fa fa-caret-up icon-color-good"></i></span>
+                    <span class="easy-pie-title"> Transfered <i class="fa fa-caret-up icon-color-good"></i></span>
                     <ul class="smaller-stat hidden-sm pull-right">
                       <li>
                         <span class="div bg-color-darken">10GB</span>
@@ -217,7 +217,7 @@ input{display:inline;}
                     <div class="easy-pie-chart txt-color-darken" data-percent="36" data-pie-size="50">
                       <span class="percent degree-sign">36 <i class="fa fa-caret-up"></i></span>
                     </div>
-                    <span class="easy-pie-title"> factor/D <i class="fa fa-caret-down icon-color-good"></i></span>
+                    <span class="easy-pie-title"> Temperature <i class="fa fa-caret-down icon-color-good"></i></span>
                     <ul class="smaller-stat hidden-sm pull-right">
                       <li>
                         <span class="div bg-color-red"><i class="fa fa-caret-up"></i> 124</span>
@@ -345,7 +345,7 @@ jobs.forEach(function(d) d.percent = 100 * d.people / sumByYear[d.year]);
 
 /* Sizing parameters and scales. */
 var w = window.innerWidth*0.95,
-    h = window.innerHeight*0.45,
+    h = window.innerHeight*0.5,
 
     x = pv.Scale.linear(2002, 2015).range(0, w),
     y = pv.Scale.linear(0, 100).range(0, h),
@@ -472,10 +472,10 @@ search($("#query").val());
     <script src="../js/bootstrap.min.js"></script></script>
 
     <!-- EASY PIE CHARTS -->
-    <script src="../js/plugin/easy-pie-chart/jquery.easy-pie-chart.min.js"></script>
+    <script src="../js/plugin/easy-pie-chart/jquery.easy-pie-chart.min.js"async ></script>
 
     <!-- SPARKLINES -->
-    <script src="../js/plugin/sparkline/jquery.sparkline.min.js"></script>
+    <script src="../js/plugin/sparkline/jquery.sparkline.min.js"async ></script>
     <script src="../js/app.js"></script>
 <script type="text/javascript" class="ng-scope">
   /* DO NOT REMOVE : GLOBAL FUNCTIONS!
