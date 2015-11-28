@@ -136,3 +136,14 @@ html,body{height:100%;padding:0px;margin:0px;}
 
 
 
+        header * {
+          box-sizing: border-box;
+        }
+        #nav-search{
+          max-height:32px;
+          margin:0px;
+        }
+        #timeline{
+        bottom:0px;
+        background-color: #fff;
+        }
