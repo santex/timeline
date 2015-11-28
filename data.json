@@ -4,174 +4,1239 @@
     {
         "headline":"&nbsp;",
         "type":"default",
-        "startDate":"2009,10",
+        "startDate":"1999,12",
         "text":"<i></i>",
-        "date": [
-             {
-                "startDate":"2009,7",
-                "headline":"Another time-lapse experiment",
-                "text":"",
-                "asset":
-                {
-                    "media":"http://vimeo.com/23237102",
-                    "credit":"",
-                    "caption":""
-                }
-            },
-            {
-                "startDate":"2009,5",
-                "headline":"Redesign of my portfolio",
-                "text":"",
-                "asset":
-                {
-                    "media":"assets/img/shots/sidebar_s3.jpg",
-                    "credit":"<a href='http://dribbble.com/shots/401334-Sidebar'>by Chris Brauckmuller</a>",
-                    "caption":""
-                }
-            },
-            {
-                "startDate":"2009,7",
-                "headline":"Another time-lapse experiment",
-                "text":"",
-                "asset":
-                {
-                    "media":"http://vimeo.com/23237102",
-                    "credit":"",
-                    "caption":""
-                }
-            },
-            {
-                "startDate":"2009,10",
-                "headline":"Developed a Gmail Client",
-                "text":"",
-                "asset":
-                {
-                    "media":"assets/img/shots/shot_1298590416.jpg",
-                    "credit":"<a href='http://dribbble.com/shots/120088-Gmail-Pokki-Final-Ui'>by Justalab</a>",
-                    "caption":""
-                }
-            },
-            {
-                "startDate":"2010,3",
-                "headline":"Logo Design for a pet shop",
-                "text":"",
-                "asset":
-                {
-                    "media":"assets/img/shots/pet___you.jpg",
-                    "credit":"<a href='http://dribbble.com/shots/444003-Pet-You'>by Nikita Lebedev</a>",
-                    "caption":""
-                }
-            },
-            {
-                "startDate":"2010,4",
-                "headline":"Developed an iPad newspaper application",
-                "text":"It was a challenge to create both the design and code in a week.",
-                "asset":
-                {
-                    "media":"assets/img/shots/proto_v4_decoupe_2.jpg",
-                    "credit":"<a href='http://dribbble.com/shots/228267-Swiss-newspaper-reader-app-for-iPad-UI-UX-iOS'>by Jonathan Moreira</a>",
-                    "caption":""
-                }
-            },
-            {
-                "startDate":"2010,8",
-                "headline":"Illustration for a big client.",
-                "text":"",
-                "asset":
-                {
-                    "media":"assets/img/shots/chameleon.jpg",
-                    "credit":"<a href='http://dribbble.com/shots/366400-Chameleon'>Chameleon by Mike</a>",
-                    "caption":""
-                }
-            },
-            {
-                "startDate":"2011,2",
-                "headline":"Illustration for a big client.",
-                "text":"",
-                "asset":
-                {
-                    "media":"assets/img/shots/chameleon.jpg",
-                    "credit":"<a href='http://dribbble.com/shots/366400-Chameleon'>Chameleon by Mike</a>",
-                    "caption":""
-                }
-            },
-            {
-                "startDate":"2011,8",
-                "headline":"Illustration for a big client.",
-                "text":"",
-                "asset":
-                {
-                    "media":"assets/img/shots/chameleon.jpg",
-                    "credit":"<a href='http://dribbble.com/shots/366400-Chameleon'>Chameleon by Mike</a>",
-                    "caption":""
-                }
-            },
-            {
-                "startDate":"2012,1",
-                "headline":"Illustration for a big client.",
-                "text":"",
-                "asset":
-                {
-                    "media":"assets/img/shots/chameleon.jpg",
-                    "credit":"<a href='http://dribbble.com/shots/366400-Chameleon'>Chameleon by Mike</a>",
-                    "caption":""
-                }
-            },
-            {
-                "startDate":"2012,4",
-                "headline":"Illustration for a big client.",
-                "text":"",
-                "asset":
-                {
-                    "media":"assets/img/shots/chameleon.jpg",
-                    "credit":"<a href='http://dribbble.com/shots/366400-Chameleon'>Chameleon by Mike</a>",
-                    "caption":""
-                }
-            },
-            {
-                "startDate":"2013,2",
-                "headline":"Illustration for a big client.",
-                "text":"",
-                "asset":
-                {
-                    "media":"assets/img/shots/chameleon.jpg",
-                    "credit":"<a href='http://dribbble.com/shots/366400-Chameleon'>Chameleon by Mike</a>",
-                    "caption":""
-                }
-            },
-            {
-                "startDate":"2013,3",
-                "headline":"Illustration for a big client.",
-                "text":"",
-                "asset":
-                {
-                    "media":"assets/img/shots/chameleon.jpg",
-                    "credit":"<a href='http://dribbble.com/shots/366400-Chameleon'>Chameleon by Mike</a>",
-                    "caption":""
-                }
-            },
-            {
-                "startDate":"2014,4",
-                "headline":"Illustration for a big client.",
-                "text":"",
-                "asset":
-                {
-                    "media":"assets/img/shots/chameleon.jpg",
-                    "credit":"<a href='http://dribbble.com/shots/366400-Chameleon'>Chameleon by Mike</a>",
-                    "caption":""
-                }
-            },
-            {
-                "startDate":"2015,8",
-                "headline":"Illustration for a big client.",
-                "text":"",
-                "asset":
-                {
-                    "media":"assets/img/shots/chameleon.jpg",
-                    "credit":"<a href='http://dribbble.com/shots/366400-Chameleon'>Chameleon by Mike</a>",
-                    "caption":""
-                }
-            }
-        ]
+         "date" : [
+      {
+         "headline" : "",
+         "startDate" : "2000,1",
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-001.png",
+         "asset" : {
+            "caption" : "",
+
+            "media" : "assets/img/plots/prefix-001.png"
+         }
+      },
+      {
+         "startDate" : "2000,2",
+         "headline" : "",
+         "asset" : {
+            "media" : "assets/img/plots/prefix-002.png",
+            "caption" : "",
+            "credit" : ""
+         },
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-002.png"
+      },
+      {
+         "asset" : {
+            "media" : "assets/img/plots/prefix-003.png",
+            "caption" : "",
+            "credit" : ""
+         },
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-003.png",
+         "headline" : "",
+         "startDate" : "2000,3"
+      },
+      {
+         "headline" : "",
+         "startDate" : "2000,4",
+         "asset" : {
+
+            "caption" : "",
+            "media" : "assets/img/plots/prefix-004.png"
+         },
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-004.png"
+      },
+      {
+         "startDate" : "2000,5",
+         "headline" : "",
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-005.png",
+         "asset" : {
+
+            "caption" : "",
+            "media" : "assets/img/plots/prefix-005.png"
+         }
+      },
+      {
+         "asset" : {
+            "caption" : "",
+
+            "media" : "assets/img/plots/prefix-006.png"
+         },
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-006.png",
+         "headline" : "",
+         "startDate" : "2000,6"
+      },
+      {
+         "startDate" : "2000,7",
+         "headline" : "",
+         "asset" : {
+            "caption" : "",
+
+            "media" : "assets/img/plots/prefix-007.png"
+         },
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-007.png"
+      },
+      {
+         "startDate" : "2000,8",
+         "headline" : "",
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-008.png",
+         "asset" : {
+            "caption" : "",
+
+            "media" : "assets/img/plots/prefix-008.png"
+         }
+      },
+      {
+         "headline" : "",
+         "startDate" : "2000,9",
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-009.png",
+         "asset" : {
+            "caption" : "",
+
+            "media" : "assets/img/plots/prefix-009.png"
+         }
+      },
+      {
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-010.png",
+         "asset" : {
+            "media" : "assets/img/plots/prefix-010.png",
+
+            "caption" : ""
+         },
+         "headline" : "",
+         "startDate" : "2000,10"
+      },
+      {
+         "asset" : {
+            "media" : "assets/img/plots/prefix-011.png",
+            "caption" : "",
+            "credit" : ""
+         },
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-011.png",
+         "startDate" : "2000,11",
+         "headline" : ""
+      },
+      {
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-012.png",
+         "asset" : {
+            "caption" : "",
+
+            "media" : "assets/img/plots/prefix-012.png"
+         },
+         "startDate" : "2000,12",
+         "headline" : ""
+      },
+      {
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-013.png",
+         "asset" : {
+            "media" : "assets/img/plots/prefix-013.png",
+
+            "caption" : ""
+         },
+         "headline" : "",
+         "startDate" : "2001,2"
+      },
+      {
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-014.png",
+         "asset" : {
+
+            "caption" : "",
+            "media" : "assets/img/plots/prefix-014.png"
+         },
+         "headline" : "",
+         "startDate" : "2001,3"
+      },
+      {
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-015.png",
+         "asset" : {
+            "media" : "assets/img/plots/prefix-015.png",
+            "caption" : "",
+            "credit" : ""
+         },
+         "startDate" : "2001,4",
+         "headline" : ""
+      },
+      {
+         "asset" : {
+            "media" : "assets/img/plots/prefix-016.png",
+
+            "caption" : ""
+         },
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-016.png",
+         "headline" : "",
+         "startDate" : "2001,5"
+      },
+      {
+         "asset" : {
+            "media" : "assets/img/plots/prefix-017.png",
+            "caption" : "",
+            "credit" : ""
+         },
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-017.png",
+         "startDate" : "2001,6",
+         "headline" : ""
+      },
+      {
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-018.png",
+         "asset" : {
+            "caption" : "",
+
+            "media" : "assets/img/plots/prefix-018.png"
+         },
+         "headline" : "",
+         "startDate" : "2001,7"
+      },
+      {
+         "headline" : "",
+         "startDate" : "2001,8",
+         "asset" : {
+            "media" : "assets/img/plots/prefix-019.png",
+            "caption" : "",
+            "credit" : ""
+         },
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-019.png"
+      },
+      {
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-020.png",
+         "asset" : {
+            "media" : "assets/img/plots/prefix-020.png",
+
+            "caption" : ""
+         },
+         "headline" : "",
+         "startDate" : "2001,9"
+      },
+      {
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-021.png",
+         "asset" : {
+            "caption" : "",
+
+            "media" : "assets/img/plots/prefix-021.png"
+         },
+         "startDate" : "2001,10",
+         "headline" : ""
+      },
+      {
+         "startDate" : "2001,11",
+         "headline" : "",
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-022.png",
+         "asset" : {
+
+            "caption" : "",
+            "media" : "assets/img/plots/prefix-022.png"
+         }
+      },
+      {
+         "startDate" : "2001,12",
+         "headline" : "",
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-023.png",
+         "asset" : {
+            "media" : "assets/img/plots/prefix-023.png",
+
+            "caption" : ""
+         }
+      },
+      {
+         "asset" : {
+            "media" : "assets/img/plots/prefix-024.png",
+            "caption" : "",
+            "credit" : ""
+         },
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-024.png",
+         "startDate" : "2002,2",
+         "headline" : ""
+      },
+      {
+         "headline" : "",
+         "startDate" : "2002,3",
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-025.png",
+         "asset" : {
+            "media" : "assets/img/plots/prefix-025.png",
+            "caption" : "",
+            "credit" : ""
+         }
+      },
+      {
+         "startDate" : "2002,4",
+         "headline" : "",
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-026.png",
+         "asset" : {
+            "media" : "assets/img/plots/prefix-026.png",
+
+            "caption" : ""
+         }
+      },
+      {
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-027.png",
+         "asset" : {
+            "media" : "assets/img/plots/prefix-027.png",
+
+            "caption" : ""
+         },
+         "startDate" : "2002,5",
+         "headline" : ""
+      },
+      {
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-028.png",
+         "asset" : {
+            "caption" : "",
+
+            "media" : "assets/img/plots/prefix-028.png"
+         },
+         "startDate" : "2002,6",
+         "headline" : ""
+      },
+      {
+         "headline" : "",
+         "startDate" : "2002,7",
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-029.png",
+         "asset" : {
+            "caption" : "",
+
+            "media" : "assets/img/plots/prefix-029.png"
+         }
+      },
+      {
+         "headline" : "",
+         "startDate" : "2002,8",
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-030.png",
+         "asset" : {
+            "media" : "assets/img/plots/prefix-030.png",
+
+            "caption" : ""
+         }
+      },
+      {
+         "startDate" : "2002,9",
+         "headline" : "",
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-031.png",
+         "asset" : {
+            "media" : "assets/img/plots/prefix-031.png",
+            "caption" : "",
+            "credit" : ""
+         }
+      },
+      {
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-032.png",
+         "asset" : {
+
+            "caption" : "",
+            "media" : "assets/img/plots/prefix-032.png"
+         },
+         "headline" : "",
+         "startDate" : "2002,10"
+      },
+      {
+         "startDate" : "2002,11",
+         "headline" : "",
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-033.png",
+         "asset" : {
+
+            "caption" : "",
+            "media" : "assets/img/plots/prefix-033.png"
+         }
+      },
+      {
+         "asset" : {
+            "media" : "assets/img/plots/prefix-034.png",
+            "caption" : "",
+            "credit" : ""
+         },
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-034.png",
+         "startDate" : "2002,12",
+         "headline" : ""
+      },
+      {
+         "startDate" : "2003,2",
+         "headline" : "",
+         "asset" : {
+            "media" : "assets/img/plots/prefix-035.png",
+            "caption" : "",
+            "credit" : ""
+         },
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-035.png"
+      },
+      {
+         "startDate" : "2003,3",
+         "headline" : "",
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-036.png",
+         "asset" : {
+            "caption" : "",
+
+            "media" : "assets/img/plots/prefix-036.png"
+         }
+      },
+      {
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-037.png",
+         "asset" : {
+            "media" : "assets/img/plots/prefix-037.png",
+
+            "caption" : ""
+         },
+         "headline" : "",
+         "startDate" : "2003,4"
+      },
+      {
+         "startDate" : "2003,5",
+         "headline" : "",
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-038.png",
+         "asset" : {
+            "caption" : "",
+
+            "media" : "assets/img/plots/prefix-038.png"
+         }
+      },
+      {
+         "asset" : {
+
+            "caption" : "",
+            "media" : "assets/img/plots/prefix-039.png"
+         },
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-039.png",
+         "headline" : "",
+         "startDate" : "2003,6"
+      },
+      {
+         "headline" : "",
+         "startDate" : "2003,7",
+         "asset" : {
+            "media" : "assets/img/plots/prefix-040.png",
+
+            "caption" : ""
+         },
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-040.png"
+      },
+      {
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-041.png",
+         "asset" : {
+
+            "caption" : "",
+            "media" : "assets/img/plots/prefix-041.png"
+         },
+         "headline" : "",
+         "startDate" : "2003,8"
+      },
+      {
+         "asset" : {
+            "caption" : "",
+
+            "media" : "assets/img/plots/prefix-042.png"
+         },
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-042.png",
+         "startDate" : "2003,9",
+         "headline" : ""
+      },
+      {
+         "startDate" : "2003,10",
+         "headline" : "",
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-043.png",
+         "asset" : {
+            "media" : "assets/img/plots/prefix-043.png",
+            "caption" : "",
+            "credit" : ""
+         }
+      },
+      {
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-044.png",
+         "asset" : {
+
+            "caption" : "",
+            "media" : "assets/img/plots/prefix-044.png"
+         },
+         "headline" : "",
+         "startDate" : "2003,11"
+      },
+      {
+         "headline" : "",
+         "startDate" : "2003,12",
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-045.png",
+         "asset" : {
+            "caption" : "",
+
+            "media" : "assets/img/plots/prefix-045.png"
+         }
+      },
+      {
+         "asset" : {
+            "media" : "assets/img/plots/prefix-046.png",
+            "caption" : "",
+            "credit" : ""
+         },
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-046.png",
+         "startDate" : "2004,2",
+         "headline" : ""
+      },
+      {
+         "startDate" : "2004,3",
+         "headline" : "",
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-047.png",
+         "asset" : {
+            "media" : "assets/img/plots/prefix-047.png",
+
+            "caption" : ""
+         }
+      },
+      {
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-048.png",
+         "asset" : {
+            "media" : "assets/img/plots/prefix-048.png",
+
+            "caption" : ""
+         },
+         "startDate" : "2004,4",
+         "headline" : ""
+      },
+      {
+         "headline" : "",
+         "startDate" : "2004,5",
+         "asset" : {
+            "caption" : "",
+
+            "media" : "assets/img/plots/prefix-049.png"
+         },
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-049.png"
+      },
+      {
+         "startDate" : "2004,6",
+         "headline" : "",
+         "asset" : {
+            "media" : "assets/img/plots/prefix-050.png",
+
+            "caption" : ""
+         },
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-050.png"
+      },
+      {
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-051.png",
+         "asset" : {
+            "media" : "assets/img/plots/prefix-051.png",
+            "caption" : "",
+            "credit" : ""
+         },
+         "headline" : "",
+         "startDate" : "2004,7"
+      },
+      {
+         "startDate" : "2004,8",
+         "headline" : "",
+         "asset" : {
+
+            "caption" : "",
+            "media" : "assets/img/plots/prefix-052.png"
+         },
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-052.png"
+      },
+      {
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-053.png",
+         "asset" : {
+            "media" : "assets/img/plots/prefix-053.png",
+
+            "caption" : ""
+         },
+         "headline" : "",
+         "startDate" : "2004,9"
+      },
+      {
+         "startDate" : "2004,10",
+         "headline" : "",
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-054.png",
+         "asset" : {
+            "media" : "assets/img/plots/prefix-054.png",
+            "caption" : "",
+            "credit" : ""
+         }
+      },
+      {
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-055.png",
+         "asset" : {
+            "media" : "assets/img/plots/prefix-055.png",
+
+            "caption" : ""
+         },
+         "startDate" : "2004,11",
+         "headline" : ""
+      },
+      {
+         "headline" : "",
+         "startDate" : "2004,12",
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-056.png",
+         "asset" : {
+
+            "caption" : "",
+            "media" : "assets/img/plots/prefix-056.png"
+         }
+      },
+      {
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-057.png",
+         "asset" : {
+            "caption" : "",
+
+            "media" : "assets/img/plots/prefix-057.png"
+         },
+         "headline" : "",
+         "startDate" : "2005,2"
+      },
+      {
+         "asset" : {
+            "media" : "assets/img/plots/prefix-058.png",
+
+            "caption" : ""
+         },
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-058.png",
+         "headline" : "",
+         "startDate" : "2005,3"
+      },
+      {
+         "startDate" : "2005,4",
+         "headline" : "",
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-059.png",
+         "asset" : {
+            "caption" : "",
+
+            "media" : "assets/img/plots/prefix-059.png"
+         }
+      },
+      {
+         "startDate" : "2005,5",
+         "headline" : "",
+         "asset" : {
+
+            "caption" : "",
+            "media" : "assets/img/plots/prefix-060.png"
+         },
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-060.png"
+      },
+      {
+         "startDate" : "2005,6",
+         "headline" : "",
+         "asset" : {
+            "caption" : "",
+
+            "media" : "assets/img/plots/prefix-061.png"
+         },
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-061.png"
+      },
+      {
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-062.png",
+         "asset" : {
+            "media" : "assets/img/plots/prefix-062.png",
+
+            "caption" : ""
+         },
+         "startDate" : "2005,7",
+         "headline" : ""
+      },
+      {
+         "headline" : "",
+         "startDate" : "2005,8",
+         "asset" : {
+            "media" : "assets/img/plots/prefix-063.png",
+
+            "caption" : ""
+         },
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-063.png"
+      },
+      {
+         "startDate" : "2005,9",
+         "headline" : "",
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-064.png",
+         "asset" : {
+            "media" : "assets/img/plots/prefix-064.png",
+
+            "caption" : ""
+         }
+      },
+      {
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-065.png",
+         "asset" : {
+            "media" : "assets/img/plots/prefix-065.png",
+
+            "caption" : ""
+         },
+         "headline" : "",
+         "startDate" : "2005,10"
+      },
+      {
+         "startDate" : "2005,11",
+         "headline" : "",
+         "asset" : {
+            "media" : "assets/img/plots/prefix-066.png",
+
+            "caption" : ""
+         },
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-066.png"
+      },
+      {
+         "startDate" : "2005,12",
+         "headline" : "",
+         "asset" : {
+            "media" : "assets/img/plots/prefix-067.png",
+            "caption" : "",
+            "credit" : ""
+         },
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-067.png"
+      },
+      {
+         "headline" : "",
+         "startDate" : "2006,2",
+         "asset" : {
+
+            "caption" : "",
+            "media" : "assets/img/plots/prefix-068.png"
+         },
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-068.png"
+      },
+      {
+         "startDate" : "2006,3",
+         "headline" : "",
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-069.png",
+         "asset" : {
+
+            "caption" : "",
+            "media" : "assets/img/plots/prefix-069.png"
+         }
+      },
+      {
+         "asset" : {
+            "caption" : "",
+
+            "media" : "assets/img/plots/prefix-070.png"
+         },
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-070.png",
+         "startDate" : "2006,4",
+         "headline" : ""
+      },
+      {
+         "startDate" : "2006,5",
+         "headline" : "",
+         "asset" : {
+            "media" : "assets/img/plots/prefix-071.png",
+            "caption" : "",
+            "credit" : ""
+         },
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-071.png"
+      },
+      {
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-072.png",
+         "asset" : {
+
+            "caption" : "",
+            "media" : "assets/img/plots/prefix-072.png"
+         },
+         "headline" : "",
+         "startDate" : "2006,6"
+      },
+      {
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-073.png",
+         "asset" : {
+            "media" : "assets/img/plots/prefix-073.png",
+
+            "caption" : ""
+         },
+         "startDate" : "2006,7",
+         "headline" : ""
+      },
+      {
+         "headline" : "",
+         "startDate" : "2006,8",
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-074.png",
+         "asset" : {
+            "caption" : "",
+
+            "media" : "assets/img/plots/prefix-074.png"
+         }
+      },
+      {
+         "asset" : {
+            "media" : "assets/img/plots/prefix-075.png",
+
+            "caption" : ""
+         },
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-075.png",
+         "startDate" : "2006,9",
+         "headline" : ""
+      },
+      {
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-076.png",
+         "asset" : {
+            "media" : "assets/img/plots/prefix-076.png",
+
+            "caption" : ""
+         },
+         "startDate" : "2006,10",
+         "headline" : ""
+      },
+      {
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-077.png",
+         "asset" : {
+
+            "caption" : "",
+            "media" : "assets/img/plots/prefix-077.png"
+         },
+         "headline" : "",
+         "startDate" : "2006,11"
+      },
+      {
+         "headline" : "",
+         "startDate" : "2006,12",
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-078.png",
+         "asset" : {
+            "caption" : "",
+
+            "media" : "assets/img/plots/prefix-078.png"
+         }
+      },
+      {
+         "headline" : "",
+         "startDate" : "2007,2",
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-079.png",
+         "asset" : {
+            "caption" : "",
+
+            "media" : "assets/img/plots/prefix-079.png"
+         }
+      },
+      {
+         "startDate" : "2007,3",
+         "headline" : "",
+         "asset" : {
+            "media" : "assets/img/plots/prefix-080.png",
+
+            "caption" : ""
+         },
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-080.png"
+      },
+      {
+         "startDate" : "2007,4",
+         "headline" : "",
+         "asset" : {
+            "media" : "assets/img/plots/prefix-081.png",
+            "caption" : "",
+            "credit" : ""
+         },
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-081.png"
+      },
+      {
+         "headline" : "",
+         "startDate" : "2007,5",
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-082.png",
+         "asset" : {
+            "media" : "assets/img/plots/prefix-082.png",
+            "caption" : "",
+            "credit" : ""
+         }
+      },
+      {
+         "asset" : {
+            "media" : "assets/img/plots/prefix-083.png",
+
+            "caption" : ""
+         },
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-083.png",
+         "headline" : "",
+         "startDate" : "2007,6"
+      },
+      {
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-084.png",
+         "asset" : {
+
+            "caption" : "",
+            "media" : "assets/img/plots/prefix-084.png"
+         },
+         "headline" : "",
+         "startDate" : "2007,7"
+      },
+      {
+         "headline" : "",
+         "startDate" : "2007,8",
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-085.png",
+         "asset" : {
+
+            "caption" : "",
+            "media" : "assets/img/plots/prefix-085.png"
+         }
+      },
+      {
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-086.png",
+         "asset" : {
+
+            "caption" : "",
+            "media" : "assets/img/plots/prefix-086.png"
+         },
+         "headline" : "",
+         "startDate" : "2007,9"
+      },
+      {
+         "startDate" : "2007,10",
+         "headline" : "",
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-087.png",
+         "asset" : {
+            "media" : "assets/img/plots/prefix-087.png",
+            "caption" : "",
+            "credit" : ""
+         }
+      },
+      {
+         "asset" : {
+
+            "caption" : "",
+            "media" : "assets/img/plots/prefix-088.png"
+         },
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-088.png",
+         "headline" : "",
+         "startDate" : "2007,11"
+      },
+      {
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-089.png",
+         "asset" : {
+            "media" : "assets/img/plots/prefix-089.png",
+
+            "caption" : ""
+         },
+         "startDate" : "2007,12",
+         "headline" : ""
+      },
+      {
+         "headline" : "",
+         "startDate" : "2008,2",
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-090.png",
+         "asset" : {
+            "media" : "assets/img/plots/prefix-090.png",
+            "caption" : "",
+            "credit" : ""
+         }
+      },
+      {
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-091.png",
+         "asset" : {
+            "media" : "assets/img/plots/prefix-091.png",
+            "caption" : "",
+            "credit" : ""
+         },
+         "headline" : "",
+         "startDate" : "2008,3"
+      },
+      {
+         "headline" : "",
+         "startDate" : "2008,4",
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-092.png",
+         "asset" : {
+            "caption" : "",
+
+            "media" : "assets/img/plots/prefix-092.png"
+         }
+      },
+      {
+         "startDate" : "2008,5",
+         "headline" : "",
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-093.png",
+         "asset" : {
+            "media" : "assets/img/plots/prefix-093.png",
+            "caption" : "",
+            "credit" : ""
+         }
+      },
+      {
+         "startDate" : "2008,6",
+         "headline" : "",
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-094.png",
+         "asset" : {
+            "media" : "assets/img/plots/prefix-094.png",
+            "caption" : "",
+            "credit" : ""
+         }
+      },
+      {
+         "startDate" : "2008,7",
+         "headline" : "",
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-095.png",
+         "asset" : {
+
+            "caption" : "",
+            "media" : "assets/img/plots/prefix-095.png"
+         }
+      },
+      {
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-096.png",
+         "asset" : {
+            "media" : "assets/img/plots/prefix-096.png",
+
+            "caption" : ""
+         },
+         "headline" : "",
+         "startDate" : "2008,8"
+      },
+      {
+         "startDate" : "2008,9",
+         "headline" : "",
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-097.png",
+         "asset" : {
+
+            "caption" : "",
+            "media" : "assets/img/plots/prefix-097.png"
+         }
+      },
+      {
+         "asset" : {
+            "media" : "assets/img/plots/prefix-098.png",
+
+            "caption" : ""
+         },
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-098.png",
+         "startDate" : "2008,10",
+         "headline" : ""
+      },
+      {
+         "asset" : {
+            "media" : "assets/img/plots/prefix-099.png",
+
+            "caption" : ""
+         },
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-099.png",
+         "startDate" : "2008,11",
+         "headline" : ""
+      },
+      {
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-100.png",
+         "asset" : {
+            "media" : "assets/img/plots/prefix-100.png",
+            "caption" : "",
+            "credit" : ""
+         },
+         "headline" : "",
+         "startDate" : "2008,12"
+      },
+      {
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-101.png",
+         "asset" : {
+            "media" : "assets/img/plots/prefix-101.png",
+
+            "caption" : ""
+         },
+         "headline" : "",
+         "startDate" : "2009,2"
+      },
+      {
+         "headline" : "",
+         "startDate" : "2009,3",
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-102.png",
+         "asset" : {
+            "media" : "assets/img/plots/prefix-102.png",
+
+            "caption" : ""
+         }
+      },
+      {
+         "asset" : {
+
+            "caption" : "",
+            "media" : "assets/img/plots/prefix-103.png"
+         },
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-103.png",
+         "startDate" : "2009,4",
+         "headline" : ""
+      },
+      {
+         "asset" : {
+            "caption" : "",
+
+            "media" : "assets/img/plots/prefix-104.png"
+         },
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-104.png",
+         "headline" : "",
+         "startDate" : "2009,5"
+      },
+      {
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-105.png",
+         "asset" : {
+
+            "caption" : "",
+            "media" : "assets/img/plots/prefix-105.png"
+         },
+         "startDate" : "2009,6",
+         "headline" : ""
+      },
+      {
+         "startDate" : "2009,7",
+         "headline" : "",
+         "asset" : {
+            "media" : "assets/img/plots/prefix-106.png",
+
+            "caption" : ""
+         },
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-106.png"
+      },
+      {
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-107.png",
+         "asset" : {
+            "caption" : "",
+
+            "media" : "assets/img/plots/prefix-107.png"
+         },
+         "headline" : "",
+         "startDate" : "2009,8"
+      },
+      {
+         "startDate" : "2009,9",
+         "headline" : "",
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-108.png",
+         "asset" : {
+            "media" : "assets/img/plots/prefix-108.png",
+            "caption" : "",
+            "credit" : ""
+         }
+      },
+      {
+         "headline" : "",
+         "startDate" : "2009,10",
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-109.png",
+         "asset" : {
+            "media" : "assets/img/plots/prefix-109.png",
+
+            "caption" : ""
+         }
+      },
+      {
+         "asset" : {
+            "media" : "assets/img/plots/prefix-110.png",
+
+            "caption" : ""
+         },
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-110.png",
+         "headline" : "",
+         "startDate" : "2009,11"
+      },
+      {
+         "headline" : "",
+         "startDate" : "2009,12",
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-111.png",
+         "asset" : {
+            "media" : "assets/img/plots/prefix-111.png",
+            "caption" : "",
+            "credit" : ""
+         }
+      },
+      {
+         "startDate" : "2010,2",
+         "headline" : "",
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-112.png",
+         "asset" : {
+
+            "caption" : "",
+            "media" : "assets/img/plots/prefix-112.png"
+         }
+      },
+      {
+         "asset" : {
+            "media" : "assets/img/plots/prefix-113.png",
+            "caption" : "",
+            "credit" : ""
+         },
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-113.png",
+         "startDate" : "2010,3",
+         "headline" : ""
+      },
+      {
+         "asset" : {
+            "media" : "assets/img/plots/prefix-114.png",
+
+            "caption" : ""
+         },
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-114.png",
+         "headline" : "",
+         "startDate" : "2010,4"
+      },
+      {
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-115.png",
+         "asset" : {
+            "media" : "assets/img/plots/prefix-115.png",
+            "caption" : "",
+            "credit" : ""
+         },
+         "headline" : "",
+         "startDate" : "2010,5"
+      },
+      {
+         "asset" : {
+
+            "caption" : "",
+            "media" : "assets/img/plots/prefix-116.png"
+         },
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-116.png",
+         "headline" : "",
+         "startDate" : "2010,6"
+      },
+      {
+         "headline" : "",
+         "startDate" : "2010,7",
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-117.png",
+         "asset" : {
+            "media" : "assets/img/plots/prefix-117.png",
+            "caption" : "",
+            "credit" : ""
+         }
+      },
+      {
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-118.png",
+         "asset" : {
+            "media" : "assets/img/plots/prefix-118.png",
+            "caption" : "",
+            "credit" : ""
+         },
+         "startDate" : "2010,8",
+         "headline" : ""
+      },
+      {
+         "startDate" : "2010,9",
+         "headline" : "",
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-119.png",
+         "asset" : {
+            "caption" : "",
+
+            "media" : "assets/img/plots/prefix-119.png"
+         }
+      },
+      {
+         "headline" : "",
+         "startDate" : "2010,10",
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-120.png",
+         "asset" : {
+
+            "caption" : "",
+            "media" : "assets/img/plots/prefix-120.png"
+         }
+      },
+      {
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-121.png",
+         "asset" : {
+            "media" : "assets/img/plots/prefix-121.png",
+
+            "caption" : ""
+         },
+         "headline" : "",
+         "startDate" : "2010,11"
+      },
+      {
+         "startDate" : "2010,12",
+         "headline" : "",
+         "asset" : {
+            "media" : "assets/img/plots/prefix-122.png",
+            "caption" : "",
+            "credit" : ""
+         },
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-122.png"
+      },
+      {
+         "startDate" : "2011,2",
+         "headline" : "",
+         "text" : "<a href='http://santex.github.io/santex/'>by Hagen Geissler</a> plot prefix-123.png",
+         "asset" : {
+            "caption" : "",
+
+            "media" : "assets/img/plots/prefix-123.png"
+         }
+      }
+   ]
     }
 }

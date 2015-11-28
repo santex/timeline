@@ -7,19 +7,13 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="">
-
     <title>Timeline</title>
-
-
     <script src="assets/js/jquery-1.7.1.min.js"></script>
     <script src="assets/js/bootstrap.js"></script>
     <script src="assets/js/uri.js"></script>
     <script src="assets/js/d3.v3.min.js"></script>
-
-    <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <link href="assets/css/ashbury-d3.css" rel="stylesheet" />
     <link href="assets/css/toolkit-inverse.css" rel="stylesheet">
-    <link href="assets/css/application.css" rel="stylesheet">
     <!-- Our Stylesheet -->
 
     <link rel="stylesheet" href="assets/css/styles.css" />
@@ -27,10 +21,6 @@
 
 
     <style>
-      /* note: this is a hack for ios iframe for bootstrap themes shopify page */
-      /* this chunk of css is not part of the toolkit :) */
-
-
         header * {
           box-sizing: border-box;
         }
@@ -38,109 +28,74 @@
           max-height:32px;
           margin:0px;
         }
-
-
-        .nav-tabs{
-          margin:100px 30px 2% 30px;
-                }
-
-
-#contentx{
-background-color: #fff;
-
-
-
-}
-
-#timeline{
-min-height:400px;
-height:80%;
-margin-top:50px;
-bottom:0px;
-max-height:800px;
-overflow:hidden;
-
-background-color: #fff;
-
-}
-        footer {
-          position:fixed;
-          bottom:0px;
-          left:0px;
-          width:100%;
-              line-height: 1.5;
-    color: #cfd2da;
+        #timeline{
+        bottom:0px;
+        background-color: #fff;
 
         }
     </style>
     </head>
     <body>
 
-          <header style="">
-            <nav class="ci ou g">
-              <div class="ft ui">
-                <div class="oj">
-                  <button type="button" class="om collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="ct">Toggle navigation</span>
-                    <span class="on"></span>
-                    <span class="on"></span>
-                    <span class="on"></span>
-                  </button>
-                  <a class="ol tu" href="#">
-                    <span class="bv act tt"></span>
-                    Timeline
-                  </a>
-                </div>
-                <div id="navbar" class="ok collapse">
-                  <ul class="nav navbar-nav">
-                    <li>
-                      <a href="#" class="menu-toggle" data-show-dialog="side-menu-advanced">Menue</a>
-                    </li>
-                    <li>
-                      <a href="#" class="menu-togglex" data-show-dialog="side-menux-advanced">Stats</a>
-                    </li>
-
-                  </ul>
-                  <form class="fa oo ny">
-                    <div class="aol">
-                      <input class="form-control" type="text" placeholder="Search..." id="nav-search">
-                      <span class="bv adn"></span>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </nav>
-          </header>
-          <!-- Nav tabs -->
-          <ul class="nav nav-tabs" role="tablist">
-            <li role="presentation" class="active"><a href="#wheel-wrapper" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
-            <li role="presentation"><a href="#timeline" aria-controls="timeline" role="tab" data-toggle="tab">Timeline</a></li>
-            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
-            <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
-            <div style="float:right; margin-top:14px">
-            <a href="/wheel?q=Flower-0.10&amp;runtime=1&amp;fs=1" target="_blank">
-                <i class="icon-external-link tt" data-toggle="tooltip" data-placement="left" title="" data-original-title="Open full screen in new window"></i>
+    <header>
+      <nav class="ci ou g">
+        <div class="ft ui">
+          <div class="oj">
+            <button type="button" class="om collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="ct">Toggle navigation</span>
+              <span class="on"></span>
+              <span class="on"></span>
+              <span class="on"></span>
+            </button>
+            <a class="ol tu" href="#">
+              <span class="bv act tt"></span>
+              Timeline
             </a>
-          </ul>
-
-
-          <!-- Tab panes -->
-          <div  id="contentx">
-          <div class="tab-content">
-            <div role="tabpanel" class="tab-pane active" id="wheel-wrapper">
-              <div id="wheel" data-json-url="data"></div>
-              <div class="spinner"></div>
-            </div>
-            <div role="tabpanel" class="tab-pane" id="timeline">
-
-
-
-            </div>
-            <div role="tabpanel" class="tab-pane" id="messages">...</div>
-            <div role="tabpanel" class="tab-pane" id="settings">...</div>
           </div>
-          </div>
+          <div id="navbar" class="ok collapse">
 
+
+            <ul class="nav navbar-nav" role="tablist">
+              <li>
+                <a href="#" class="menu-toggle" data-show-dialog="side-menu-advanced">Menue</a>
+              </li>
+              <li>
+                <a href="#" class="menu-togglex" data-show-dialog="side-menux-advanced">Stats</a>
+              </li>
+
+              <li role="presentation"><a href="#timeline" aria-controls="timeline" role="tab" data-toggle="tab">Timeline</a></li>
+              <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+              <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+       <!-- Nav tabs -->
+
+
+
+    </header>
+
+
+
+
+            <!-- Tab panes -->
+            <div  id="contentx">
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane active" id="wheel-wrapper">
+                <div id="wheel" data-json-url="data"></div>
+                <div class="spinner"></div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="timeline" style="height:90%;">
+
+
+
+              </div>
+              <div role="tabpanel" class="tab-pane" id="messages">...</div>
+              <div role="tabpanel" class="tab-pane" id="settings">...</div>
+            </div>
+            </div>
 
 
       <div class="side-menux-advanced">
@@ -197,10 +152,8 @@ background-color: #fff;
           </div>
           <span class="side-menu-close"><i class="fa fa-close"></i></span>
       </aside>
-
-
-          <script src="assets/js/d3.prereqs.js"></script>
-          <script src="assets/js/timeline-min.js"></script>
+      <script src="assets/js/d3.prereqs.js"></script>
+      <script src="assets/js/timeline-min.js"></script>
 
 
       <script>
