@@ -2,10 +2,10 @@
 {
     "timeline":
     {
-        "headline":"Quantitative analysis",
+        "headline":"",
         "type":"default",
         "startDate":"2000,1",
-        "text":"<i><a href='http://santex.github.io/santex/'>by Hagen Geissler</a></i>",
+        "text":"Quantitative analysis <br/><i><a href='http://santex.github.io/santex/'>by Hagen Geissler</a></i>",
          "date" : [
       {
          "headline" : "",
